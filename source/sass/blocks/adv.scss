@@ -36,6 +36,7 @@
   border: 1px solid rgb(2, 102, 193, 0.1);
   padding-top: 82px;
   position: relative;
+  margin-bottom: 15px;
 
   h3 {
     font-weight: 600;
@@ -78,5 +79,9 @@
 
   &--flower::before {
     background-image: url("../__spritemap#sprite-flower-view");
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
