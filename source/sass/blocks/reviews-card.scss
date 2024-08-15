@@ -1,0 +1,33 @@
+.reviews-card {
+  padding: 20px;
+  box-shadow: 0 0 20px 0 rgb(28, 51, 116, 0.1);
+}
+
+.reviews-card__content {
+  margin-bottom: 15px;
+
+  p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 12px;
+  }
+}
+
+.reviews-card__image {
+  margin-bottom: 20px;
+}
+
+.reviews-card__name {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.reviews-card__badge {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+}

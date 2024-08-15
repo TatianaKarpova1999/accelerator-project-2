@@ -363,7 +363,7 @@
             </h2>
             <div class="instructors__slider">
               <ul class="instructors__list">
-                <li class="instructors__item training-slide training-slide--one">
+                <li class="instructors__item training-slide">
                   <picture>
                     <source width="255" height="200" type="image/webp" media="(min-width: 1440px)" srcset="img/instructor-desktop-1@1x.webp 1x, img/instructor-desktop-1@2x.webp 2x">
                     <source width="183" height="200" type="image/webp"  media="(min-width: 768px)" srcset="img/instructor-tablet-1@1x.webp 1x, img/instructor-tablet-1@2x.webp 2x">
@@ -392,7 +392,7 @@
                   </div>
                 </li>
 
-                <li class="instructors__item training-slide training-slide--two">
+                <li class="instructors__item training-slide">
                   <picture>
                     <source width="255" height="200" type="image/webp" media="(min-width: 1440px)" srcset="img/instructor-desktop-2@1x.webp 1x, img/instructor-desktop-2@2x.webp 2x">
                     <source width="183" height="200" type="image/webp"  media="(min-width: 768px)" srcset="img/instructor-tablet-2@1x.webp 1x, img/instructor-tablet-2@2x.webp 2x">
@@ -421,7 +421,7 @@
                   </div>
                 </li>
 
-                <li class="instructors__item training-slide training-slide--three">
+                <li class="instructors__item training-slide">
                   <picture>
                     <source width="255" height="200" type="image/webp" media="(min-width: 1440px)" srcset="img/instructor-desktop-3@1x.webp 1x, img/instructor-desktop-3@2x.webp 2x">
                     <source width="183" height="200" type="image/webp"  media="(min-width: 768px)" srcset="img/instructor-tablet-3@1x.webp 1x, img/instructor-tablet-3@2x.webp 2x">
@@ -450,7 +450,7 @@
                   </div>
                 </li>
 
-                <li class="instructors__item training-slide training-slide--four">
+                <li class="instructors__item training-slide">
                   <picture>
                     <source width="255" height="200" type="image/webp" media="(min-width: 1440px)" srcset="img/instructor-desktop-4@1x.webp 1x, img/instructor-desktop-4@2x.webp 2x">
                     <source width="183" height="200" type="image/webp"  media="(min-width: 768px)" srcset="img/instructor-tablet-4@1x.webp 1x, img/instructor-tablet-4@2x.webp 2x">
@@ -479,7 +479,7 @@
                   </div>
                 </li>
 
-                <li class="instructors__item training-slide training-slide--five">
+                <li class="instructors__item training-slide">
                   <picture>
                     <source width="255" height="200" type="image/webp" media="(min-width: 1440px)" srcset="img/instructor-desktop-5@1x.webp 1x, img/instructor-desktop-5@2x.webp 2x">
                     <source width="183" height="200" type="image/webp"  media="(min-width: 768px)" srcset="img/instructor-tablet-5@1x.webp 1x, img/instructor-tablet-5@2x.webp 2x">
@@ -544,18 +544,21 @@
       <section class="about" data-test="about">
         <div class="about__wrapper">
           <picture>
-            <source width="255" height="200" type="image/webp" media="(min-width: 1440px)" srcset="img/instructor-desktop-1@1x.webp 1x, img/instructor-desktop-1@2x.webp 2x">
-            <source width="183" height="200" type="image/webp"  media="(min-width: 768px)" srcset="img/instructor-tablet-1@1x.webp 1x, img/instructor-tablet-1@2x.webp 2x">
-            <source width="260" height="200" type="image/webp" srcset="img/instructor-mobile-1@1x.webp 1x, img/instructor-mobile-1@2x.webp 2x">
+            <source width="660" height="498" type="image/webp" media="(min-width: 1440px)" srcset="img/about-desktop@1x.webp 1x, img/about-desktop@2x.webp 2x">
+            <source width="543" height="350" type="image/webp"  media="(min-width: 768px)" srcset="img/about-tablet@1x.webp 1x, img/about-tablet@2x.webp 2x">
+            <source width="320" height="400" type="image/webp" srcset="img/about-mobile@1x.webp 1x, img/about-mobile@2x.webp 2x">
 
-            <source width="255" height="200" type="img/jpg" media="(min-width: 1440px)" srcset="img/instructor-desktop-1@1x.jpg 1x, img/instructor-desktop-1@2x.jpg 2x">
-            <source width="183" height="200" type="img/jpg" media="(min-width: 768px)" srcset="img/instructor-tablet-1@1x.jpg 1x, img/instructor-tablet-1@2x.jpg 2x">
-            <img class="training-slide__image" src="img/instructor-mobile-1@1x.jpg" srcset="img/instructor-mobile-1@2x.jpg" width="260" height="200" alt="Тренажёрный зал">
+            <source width="660" height="498" type="img/jpg" media="(min-width: 1440px)" srcset="img/about-desktop@1x.jpg 1x, img/about-desktop@2x.jpg 2x">
+            <source width="543" height="350" type="img/jpg" media="(min-width: 768px)" srcset="img/about-tablet@1x.jpg 1x, img/about-tablet@2x.jpg 2x">
+            <img class="about__image" src="img/about-mobile@1x.jpg" srcset="img/about-mobile@2x.jpg" width="320" height="400" alt="Люди спускаются с горы">
           </picture>
           <div class="about__story">
             <h2>
               О нас
             </h2>
+            <span>
+              О нас
+            </span>
             <h3>
               История компании
             </h3>
@@ -579,6 +582,9 @@
           <h2 class="reviews__title">
             Отзывы
           </h2>
+          <span class="reviews__shadow">
+            Отзывы
+          </span>
           <div class="reviews__slider">
             <ul class="reviews__list">
               <li class="reviews__item reviews-card">
@@ -592,12 +598,14 @@
                   <img class="reviews-card__image" src="img/reviews-mobile-1@1x.jpg" srcset="img/reviews-mobile-1@2x.jpg" width="250" height="169" alt="Тренажёрный зал">
                 </picture>
 
-                <p>
-                  Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты, всему научили, все показали. Делились историями о местах, людях, культуре места.
-                </p>
-                <p>
-                  С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!
-                </p>
+                <div class="reviews-card__content">
+                  <p>
+                    Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты, всему научили, все показали. Делились историями о местах, людях, культуре места.
+                  </p>
+                  <p>
+                    С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!
+                  </p>
+                </div>
                 <p class="reviews-card__name">
                   Фролов Александр
                 </p>
@@ -616,12 +624,14 @@
                   <source width="186" height="237" type="img/jpg" media="(min-width: 768px)" srcset="img/reviews-tablet-2@1x.jpg 1x, img/reviews-tablet-2@2x.jpg 2x">
                   <img class="reviews-card__image" src="img/reviews-mobile-2@1x.jpg" srcset="img/reviews-mobile-2@2x.jpg" width="250" height="169" alt="Тренажёрный зал">
                 </picture>
-                <p>
-                  Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века. Было очень интересно!
-                </p>
-                <p>
-                  Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам. Всем советую этот тур.
-                </p>
+                <div class="reviews-card__content">
+                  <p>
+                    Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века. Было очень интересно!
+                  </p>
+                  <p>
+                    Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам. Всем советую этот тур.
+                  </p>
+                </div>
                 <p class="reviews-card__name">
                   Иван Соловьёв
                 </p>
@@ -640,12 +650,14 @@
                   <source width="186" height="237" type="img/jpg" media="(min-width: 768px)" srcset="img/reviews-tablet-3@1x.jpg 1x, img/reviews-tablet-3@2x.jpg 2x">
                   <img class="reviews-card__image" src="img/reviews-mobile-3@1x.jpg" srcset="img/reviews-mobile-3@2x.jpg" width="250" height="169" alt="Тренажёрный зал">
                 </picture>
-                <p>
-                  Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче, чем ожидала, видимо организм уже привык.
-                </p>
-                <p>
-                  Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.
-                </p>
+                <div class="reviews-card__content">
+                  <p>
+                    Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче, чем ожидала, видимо организм уже привык.
+                  </p>
+                  <p>
+                    Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.
+                  </p>
+                </div>
                 <p class="reviews-card__name">
                   Евгения Баженова
                 </p>
@@ -664,12 +676,14 @@
                   <source width="186" height="237" type="img/jpg" media="(min-width: 768px)" srcset="img/reviews-tablet-4@1x.jpg 1x, img/reviews-tablet-4@2x.jpg 2x">
                   <img class="reviews-card__image" src="img/reviews-mobile-4@1x.jpg" srcset="img/reviews-mobile-4@2x.jpg" width="250" height="169" alt="Тренажёрный зал">
                 </picture>
-                <p>
-                  Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину.
-                </p>
-                <p>
-                  У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у костра и пели песни. Обязательно повторю такое приключение!
-                </p>
+                <div class="reviews-card__content">
+                  <p>
+                    Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину.
+                  </p>
+                  <p>
+                    У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у костра и пели песни. Обязательно повторю такое приключение!
+                  </p>
+                </div>
                 <p class="reviews-card__name">
                   Елена Пирогова
                 </p>
