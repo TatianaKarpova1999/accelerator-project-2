@@ -10,6 +10,7 @@
     line-height: 18px;
     margin: 0;
     margin-bottom: 31px;
+    padding: 0 15px;
   }
 }
 
@@ -18,10 +19,12 @@
 
   margin: 0;
   margin-bottom: 23px;
+  padding: 0 15px;
 }
 
 .gallery__shadow {
   @include shadow;
 
   top: 5px;
+  padding: 0 15px;
 }

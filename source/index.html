@@ -878,40 +878,45 @@
       <div class="footer-container" data-test="footer">
         <div class="footer-container__wrapper">
           <section class="contacts">
-            <h2 class="contacts__title">
-              Контакты
-            </h2>
-            <p>
-              Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.
-            </p>
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <h3 class="contacts__subtitle">
-                  Телефон
-                </h3>
-                <a class="contacts__text" href="tel:79837454545">
-                  +7 983 745-45-45
-                </a>
-              </li>
+            <div class="contacts__wrapper">
+              <h2 class="contacts__title">
+                Контакты
+              </h2>
+              <span class="contacts__shadow">
+                Контакты
+              </span>
+              <p>
+                Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.
+              </p>
+              <ul class="contacts__list">
+                <li class="contacts__item contacts__item--phone">
+                  <h3 class="contacts__subtitle">
+                    Телефон
+                  </h3>
+                  <a class="contacts__text" href="tel:79837454545">
+                    +7 983 745-45-45
+                  </a>
+                </li>
 
-              <li class="contacts__item">
-                <h3 class="contacts__subtitle">
-                  Email
-                </h3>
-                <a class="contacts__text" href="info@lifetour.com">
-                  info@lifetour.com
-                </a>
-              </li>
+                <li class="contacts__item contacts__item--email">
+                  <h3 class="contacts__subtitle">
+                    Email
+                  </h3>
+                  <a class="contacts__text" href="info@lifetour.com">
+                    info@lifetour.com
+                  </a>
+                </li>
 
-              <li class="contacts__item">
-                <h3 class="contacts__subtitle">
-                  Адрес
-                </h3>
-                <p class="contacts__text">
-                  г. Москва, пр-т Мира, д. 14, офис 101
-                </p>
-              </li>
-            </ul>
+                <li class="contacts__item contacts__item--address">
+                  <h3 class="contacts__subtitle">
+                    Адрес
+                  </h3>
+                  <p class="contacts__text">
+                    г. Москва, пр-т Мира, д. 14, офис 101
+                  </p>
+                </li>
+              </ul>
+            </div>
 
             <picture>
               <source width="600" height="324" type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
@@ -925,62 +930,75 @@
           </section>
 
           <footer class="footer">
-            <a class="footer__logo" href="#">
-              <img class="footer__icon" src="/__spritemap#sprite-footer-logo-view" width="142" height="42" alt="Логотип Lifetour">
-            </a>
-            <nav class="footer__nav">
-              <ul class="footer__list">
-                <li class="footer__item">
-                  Туры
+            <div class="footer__wrapper">
+              <a class="footer__logo" href="#">
+                <img class="footer__icon" src="/__spritemap#sprite-footer-logo-view" width="142" height="42" alt="Логотип Lifetour">
+              </a>
+              <nav class="footer__nav">
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">
+                      Туры
+                    </a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">
+                      Отзывы
+                    </a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">
+                      Обучение
+                    </a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">
+                      Фотографии
+                    </a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">
+                      О нас
+                    </a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+              <ul class="social-list">
+                <li class="social__item">
+                  <a class="social__link" href="https://vk.com/htmlacademy">
+                    <span class="visually-hidden">ВКонтакте</span>
+                    <svg class="social__icon" width="17" height="9">
+                      <use href="/__spritemap#sprite-vk"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer__item">
-                  Обучение
+                <li class="social__item">
+                  <a class="social__link" href="https://vk.com/htmlacademy">
+                    <span class="visually-hidden">Одноклассники</span>
+                    <svg class="social__icon" width="9" height="16">
+                      <use href="/__spritemap#sprite-ok"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer__item">
-                  О нас
-                </li>
-                <li class="footer__item">
-                  Отзывы
-                </li>
-                <li class="footer__item">
-                  Фотографии
-                </li>
-                <li class="footer__item">
-                  Контакты
+                <li class="social__item">
+                  <a class="social__link" href="https://t.me/htmlacademy">
+                    <span class="visually-hidden">Reddit</span>
+                    <svg class="social__icon" width="15" height="15">
+                      <use href="/__spritemap#sprite-reddit"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-              <a class="footer__number" href="tel:88007253232">8 800 725-32-32</a>
-            </nav>
-
-            <ul class="social-list">
-              <li class="social__item">
-                <a class="social__link" href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden">ВКонтакте</span>
-                  <svg class="social__icon" width="17" height="9">
-                    <use href="/__spritemap#sprite-vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden">Одноклассники</span>
-                  <svg class="social__icon" width="9" height="16">
-                    <use href="/__spritemap#sprite-ok"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="https://t.me/htmlacademy">
-                  <span class="visually-hidden">Reddit</span>
-                  <svg class="social__icon" width="15" height="15">
-                    <use href="/__spritemap#sprite-reddit"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <a class="footer__copyright" href="#">
-              <span class="footer__copyright-text">Политика конфиденциальности</span>
-            </a>
+              <a class="footer__copyright" href="#">
+                <span class="footer__copyright-text">Политика конфиденциальности</span>
+              </a>
+            </div>
           </footer>
         </div>
       </div>
