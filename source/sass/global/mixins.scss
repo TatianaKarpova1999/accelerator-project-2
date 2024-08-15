@@ -58,3 +58,14 @@
     pointer-events: none;
   }
 }
+
+
+@mixin shadow {
+  position: absolute;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 26px;
+  color: rgb(45, 56, 63);
+  opacity: 3%;
+  top: 20px;
+}

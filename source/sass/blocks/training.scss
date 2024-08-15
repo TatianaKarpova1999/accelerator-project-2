@@ -1,0 +1,27 @@
+.training__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  padding-top: 36px;
+  position: relative;
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+}
+
+.training__title {
+  @include h2;
+
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.training__shadow {
+  @include shadow;
+}

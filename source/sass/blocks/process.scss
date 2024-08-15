@@ -1,0 +1,78 @@
+.process__title {
+  @include h2;
+
+  margin-bottom: 25px;
+}
+
+.process__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 183px;
+    background-color: $basic-button;
+    top: 26px;
+    left: 6px;
+    z-index: 1;
+  }
+}
+
+.process__item {
+  padding-left: 63px;
+  position: relative;
+  margin-bottom: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: $basic-button;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--map {
+    background-image: url("../__spritemap#sprite-map-view");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: top 2px left 29px;
+  }
+
+  &--boot {
+    background-image: url("../__spritemap#sprite-boots-view");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: top 2px left 29px;
+  }
+
+  &--trees {
+    background-image: url("../__spritemap#sprite-trees-view");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: top 2px left 29px;
+  }
+
+  &--mountains {
+    background-image: url("../__spritemap#sprite-mountain-view");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: top 2px left 29px;
+  }
+}
+
+.process__text {
+  font-size: 12px;
+  line-height: 18px;
+}

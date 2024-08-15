@@ -1,0 +1,13 @@
+.instructors__title {
+  @include h2;
+
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.instructors__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
