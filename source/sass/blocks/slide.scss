@@ -14,8 +14,9 @@
   }
 
   h2 {
-    @include h2;
-
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 26px;
     color: $basic-white;
     margin-top: 0;
     text-align: center;
@@ -27,6 +28,7 @@
     line-height: 20px;
     text-align: center;
     color: $basic-white;
+    margin-top: 0;
     margin-bottom: 60px;
   }
 }
