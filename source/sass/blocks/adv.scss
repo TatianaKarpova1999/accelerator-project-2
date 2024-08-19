@@ -1,3 +1,12 @@
+.adv {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/bg-adv@2x.png");
+    background-size: 768px 996px;
+    background-repeat: no-repeat;
+    background-position: right top 196px;
+  }
+}
+
 .adv__wrapper {
   max-width: 320px;
   margin: 0 auto;
@@ -57,6 +66,7 @@
   padding-top: 82px;
   position: relative;
   margin-bottom: 15px;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     max-width: 324px;

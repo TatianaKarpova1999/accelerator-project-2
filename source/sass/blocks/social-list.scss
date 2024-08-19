@@ -7,6 +7,10 @@
   max-width: 128px;
   column-gap: 16px;
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .social__link {
