@@ -12,6 +12,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../../img/hero-desktop@2x.jpg");
+    height: 800px;
   }
 
   h2 {
@@ -26,6 +27,14 @@
     @media (min-width: $tablet-width) {
       font-size: 56px;
       line-height: 56px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 77px;
+      line-height: 77px;
+      text-align: left;
+      max-width: 780px;
+      margin-bottom: 25px;
     }
   }
 
@@ -42,6 +51,11 @@
       line-height: 24px;
       max-width: 500px;
       margin-bottom: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
+      max-width: 420px;
     }
   }
 }
@@ -61,6 +75,13 @@
     padding: 40px;
     padding-top: 342px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 80px 120px;
+    padding-top: 200px;
+    align-items: start;
+  }
 }
 
 .slide__button {
@@ -71,8 +92,41 @@
   width: 180px;
   box-sizing: border-box;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 134px;
+  }
 }
 
 .slide__description {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.slide__duration,
+.slide__complexity {
+  @media (min-width: $desktop-width) {
+    font-size: 12px;
+    line-height: 16px;
+    color: $basic-white;
+    padding: 14px 20px;
+    padding-left: 40px;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    background-position: top 16px left 20px;
+  }
+}
+
+.slide__duration {
+  background-image: url("../__spritemap#sprite-moon-view");
+}
+
+.slide__complexity {
+  background-image: url("../__spritemap#sprite-level-view");
 }

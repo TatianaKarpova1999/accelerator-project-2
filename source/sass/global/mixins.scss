@@ -21,8 +21,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 55px;
-    line-height: 55px;
+    font-size: 35px;
+    line-height: 35px;
   }
 }
 
@@ -73,5 +73,11 @@
     font-size: 40px;
     line-height: 40px;
     top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    line-height: 55px;
+    top: 100px;
   }
 }

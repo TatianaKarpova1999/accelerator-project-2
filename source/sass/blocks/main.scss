@@ -5,4 +5,11 @@
     background-repeat: no-repeat;
     background-position: right top 942px;
   }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/bg-desktop@2x.png");
+    background-size: 633px 1862px;
+    background-repeat: no-repeat;
+    background-position: right top 674px;
+  }
 }

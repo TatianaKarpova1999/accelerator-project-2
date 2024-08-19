@@ -18,10 +18,17 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 32px 120px;
+  }
 }
 
 .header__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header__link {
@@ -29,6 +36,27 @@
   color: $basic-white;
   font-size: 16px;
   line-height: 16px;
+  padding: 2px 4px;
+
+  &:hover {
+    box-shadow: 0 1px 0 0 #ffffff;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 1px #ffffff;
+    outline: none;
+  }
+
+  &:active {
+    color: #1c3374;
+    box-shadow: none;
+  }
+
+  &[aria-disabled="true"] {
+    box-shadow: none;
+    color: #999999;
+    pointer-events: none;
+  }
 }
 
 .header__number {
@@ -43,6 +71,11 @@
   @media (min-width: $tablet-width) {
     order: 3;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .header__nav {
@@ -51,6 +84,13 @@
 
   &--close .header__list {
     display: none;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 838px;
+      column-gap: 22px;
+    }
   }
 
   &--open .header__list {
@@ -67,6 +107,12 @@
     margin: 0;
     order: 2;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 205px;
+    height: 62px;
+    order: 0;
+  }
 }
 
 .header__toggle {
@@ -76,6 +122,10 @@
   border: none;
   position: relative;
   cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 
   &::before,
   &::after {
@@ -93,5 +143,12 @@
     width: 16.5px;
     top: 8px;
     box-shadow: none;
+  }
+}
+
+.header__icon {
+  @media (min-width: $desktop-width) {
+    width: 205px;
+    height: 61px;
   }
 }

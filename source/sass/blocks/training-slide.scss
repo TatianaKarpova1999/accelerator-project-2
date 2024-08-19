@@ -7,10 +7,16 @@
     max-width: 212px;
   }
 
+  @media (min-width: $desktop-width) {
+    max-width: 285px;
+    min-height: 356px;
+  }
+
   p {
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
+    margin: 0;
 
     @media (min-width: $tablet-width) {
       grid-column: 1/3;
