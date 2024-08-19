@@ -7,6 +7,11 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding: 40px 45px;
+  }
 }
 
 .adv__title {
@@ -14,18 +19,33 @@
 
   margin: 0;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .adv__shadow {
   @include shadow;
 
   top: 8px;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+  }
 }
 
 .adv__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
 }
 
 .adv__item {
@@ -38,18 +58,37 @@
   position: relative;
   margin-bottom: 15px;
 
+  @media (min-width: $tablet-width) {
+    max-width: 324px;
+    padding: 30px 20px;
+    padding-top: 102px;
+    box-sizing: border-box;
+  }
+
   h3 {
     font-weight: 600;
     font-size: 14px;
     line-height: 14px;
     margin: 0;
     margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 16px;
+      text-align: center;
+    }
   }
 
   p {
     font-size: 12px;
     line-height: 18px;
     text-align: center;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 
   &::before {
@@ -63,6 +102,10 @@
     background-position: 9px;
     border: 1px solid $basic-button;
     top: 19px;
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+    }
   }
 
   &--crown::before {
