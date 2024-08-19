@@ -1,16 +1,40 @@
 .reviews-card {
   padding: 20px;
   box-shadow: 0 0 20px 0 rgb(28, 51, 116, 0.1);
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 30px;
+    max-width: 565px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 186px auto;
+    column-gap: 30px;
+  }
+
+  picture {
+    @media (min-width: $tablet-width) {
+      grid-row: 1/4;
+      height: 237px;
+    }
+  }
 }
 
 .reviews-card__content {
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 
   p {
     margin: 0;
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 8px;
+    }
   }
 }
 
@@ -24,10 +48,20 @@
   line-height: 12px;
   margin: 0;
   margin-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    font-size: 13px;
+    line-height: 13px;
+  }
 }
 
 .reviews-card__badge {
   font-weight: 300;
   font-size: 12px;
   line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+  }
 }

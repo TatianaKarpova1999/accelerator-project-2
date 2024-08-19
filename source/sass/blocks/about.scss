@@ -1,5 +1,17 @@
 .about__wrapper {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 450px auto;
+  }
+
+  picture {
+    @media (min-width: $tablet-width) {
+      margin-top: 134px;
+      grid-row: 1/3;
+    }
+  }
 }
 
 .about__image {
@@ -16,6 +28,10 @@
   padding-bottom: 0;
   box-sizing: border-box;
 
+  @media (min-width: $tablet-width) {
+    margin-left: -92px;
+  }
+
   h2 {
     font-weight: 800;
     font-size: 22px;
@@ -28,6 +44,10 @@
     @include shadow;
 
     top: 0;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+    }
   }
 
   h3 {
@@ -54,6 +74,14 @@
   padding-top: 16px;
   padding-bottom: 0;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -92px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+  }
 
   h3 {
     margin: 0;
