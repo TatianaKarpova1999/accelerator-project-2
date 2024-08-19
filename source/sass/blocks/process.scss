@@ -2,6 +2,12 @@
   @include h2;
 
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 104px;
+  }
 }
 
 .process__list {
@@ -9,6 +15,13 @@
   margin: 0;
   padding: 0;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 172px;
+    row-gap: 104px;
+  }
 
   &::before {
     content: "";
@@ -19,6 +32,10 @@
     top: 26px;
     left: 6px;
     z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -26,6 +43,14 @@
   padding-left: 63px;
   position: relative;
   margin-bottom: 25px;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-position: top 2px left 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 35px;
+    background-position: top 2px left;
+  }
 
   &::before {
     content: "";
@@ -37,6 +62,10 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &:last-child {
@@ -45,34 +74,37 @@
 
   &--map {
     background-image: url("../__spritemap#sprite-map-view");
-    background-repeat: no-repeat;
-    background-size: 25px 25px;
-    background-position: top 2px left 29px;
   }
 
   &--boot {
     background-image: url("../__spritemap#sprite-boots-view");
-    background-repeat: no-repeat;
-    background-size: 25px 25px;
-    background-position: top 2px left 29px;
+
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
   }
 
   &--trees {
     background-image: url("../__spritemap#sprite-trees-view");
-    background-repeat: no-repeat;
-    background-size: 25px 25px;
-    background-position: top 2px left 29px;
+
+    @media (min-width: $tablet-width) {
+      order: 4;
+    }
   }
 
   &--mountains {
     background-image: url("../__spritemap#sprite-mountain-view");
-    background-repeat: no-repeat;
-    background-size: 25px 25px;
-    background-position: top 2px left 29px;
   }
 }
 
 .process__text {
   font-size: 12px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 225px;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+  }
 }

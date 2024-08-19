@@ -68,4 +68,10 @@
   color: rgb(45, 56, 63);
   opacity: 3%;
   top: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 40px;
+    top: 40px;
+  }
 }

@@ -6,12 +6,24 @@
   padding-top: 36px;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding: 40px 45px;
+  }
+}
+
+.training__info {
   p {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     margin: 0;
     margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 }
 
@@ -20,8 +32,16 @@
 
   margin: 0;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+  }
 }
 
 .training__shadow {
   @include shadow;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+  }
 }

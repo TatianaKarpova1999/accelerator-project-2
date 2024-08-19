@@ -9,6 +9,15 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding: 20px 45px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .header__list {
@@ -30,6 +39,10 @@
   text-decoration: none;
   grid-column: 2;
   text-align: right;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
 }
 
 .header__nav {
@@ -48,6 +61,12 @@
 .header__logo {
   grid-column: 2;
   margin-bottom: 10px;
+  height: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    order: 2;
+  }
 }
 
 .header__toggle {

@@ -6,9 +6,19 @@
   background-repeat: no-repeat;
   background-size: 290px 416px;
   background-color: #054d05;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    max-width: 330px;
+    background-size: 330px 416px;
+  }
 
   &--one {
     background-image: url("../../img/tours-mobile-1@2x.jpg");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/tours-tablet-1@2x.jpg");
+    }
   }
 
   &--two {
@@ -39,6 +49,10 @@
   order: 2;
   margin: 0;
   margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 219px;
+  }
 }
 
 .tours-card__description {
@@ -78,7 +92,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 12px;
-  margin-left: 5px;
+  margin-left: auto;
 }
 
 .tours-card__days,
@@ -124,6 +138,7 @@
   display: flex;
   column-gap: 7px;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .tours-card__item {

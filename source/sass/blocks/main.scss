@@ -1,0 +1,8 @@
+.main {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/bg-tablet@2x.png");
+    background-size: 425px 1630px;
+    background-repeat: no-repeat;
+    background-position: right top 942px;
+  }
+}

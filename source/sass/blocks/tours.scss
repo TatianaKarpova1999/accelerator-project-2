@@ -3,6 +3,10 @@
   background-repeat: no-repeat;
   background-position: right top 10px;
   background-size: 141px 595px;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
 }
 
 .tours__wrapper {
@@ -11,6 +15,11 @@
   box-sizing: border-box;
   padding: 20px 15px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding: 40px 45px;
+  }
 }
 
 .tours__title {
@@ -19,6 +28,10 @@
   text-align: left;
   margin-bottom: 42px;
   margin-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .tours__shadow {
@@ -49,6 +62,11 @@
   margin: 0 auto;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -59,6 +77,10 @@
     background-color: #2d383f;
     right: 10px;
     top: 12px;
+
+    @media (min-width: $tablet-width) {
+      right: 0;
+    }
   }
 
   &:hover {

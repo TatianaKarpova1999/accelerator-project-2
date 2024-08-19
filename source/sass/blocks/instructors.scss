@@ -3,6 +3,10 @@
 
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .instructors__list {
