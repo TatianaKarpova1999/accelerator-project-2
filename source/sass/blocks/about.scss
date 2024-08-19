@@ -2,7 +2,11 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
+    max-width: 768px;
     display: flex;
+    padding: 40px 48px;
+    padding-left: 0;
+    box-sizing: border-box;
   }
 
   picture {
