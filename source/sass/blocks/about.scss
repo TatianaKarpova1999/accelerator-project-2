@@ -10,9 +10,19 @@
     margin: 0 auto;
   }
 
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 100px 120px;
+    padding-left: 0;
+  }
+
   picture {
     @media (min-width: $tablet-width) {
       margin-top: 134px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
     }
   }
 }
@@ -20,6 +30,11 @@
 .about__container {
   @media (min-width: $tablet-width) {
     margin-left: -92px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -30,6 +45,11 @@
   @media (min-width: $tablet-width) {
     width: 542px;
     height: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 660px;
+    height: 498px;
   }
 }
 
@@ -42,12 +62,20 @@
   padding-bottom: 0;
   box-sizing: border-box;
 
+  @media (min-width: $desktop-width) {
+    max-width: 660px;
+  }
+
   h2 {
-    font-weight: 800;
-    font-size: 22px;
-    line-height: 22px;
+    @include h2;
+
     margin: 0;
     margin-bottom: 42px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 15px;
+      margin-bottom: 57px;
+    }
   }
 
   span {
@@ -72,6 +100,12 @@
       font-size: 18px;
       line-height: 18px;
     }
+
+    @media (min-width: $desktop-width) {
+      font-size: 21px;
+      line-height: 21px;
+      margin-bottom: 20px;
+    }
   }
 
   p {
@@ -86,16 +120,25 @@
       line-height: 24px;
       max-width: 270px;
     }
+
+    @media (min-width: $desktop-width) {
+      max-width: 585px;
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 }
 
 .about__target {
   max-width: 320px;
-  margin: 0 auto;
   padding: 16px 15px;
   padding-top: 16px;
   padding-bottom: 0;
   box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    max-width: 585px;
+  }
 
   h3 {
     margin: 0;
@@ -107,6 +150,12 @@
     @media (min-width: $tablet-width) {
       font-size: 18px;
       line-height: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 21px;
+      line-height: 21px;
+      margin-bottom: 20px;
     }
   }
 
@@ -121,6 +170,12 @@
       font-size: 16px;
       line-height: 24px;
       max-width: 270px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 585px;
+      font-size: 14px;
+      line-height: 22px;
     }
   }
 }

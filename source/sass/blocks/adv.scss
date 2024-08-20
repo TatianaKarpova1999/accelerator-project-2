@@ -21,6 +21,11 @@
     max-width: 768px;
     padding: 40px 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 100px 0;
+  }
 }
 
 .adv__title {
@@ -32,6 +37,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .adv__shadow {
@@ -41,6 +50,10 @@
 
   @media (min-width: $tablet-width) {
     top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 70px;
   }
 }
 

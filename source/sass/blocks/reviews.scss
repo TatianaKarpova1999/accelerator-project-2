@@ -9,6 +9,12 @@
     max-width: 768px;
     padding: 40px 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 100px 0;
+    padding-bottom: 87px;
+  }
 }
 
 .reviews__title {
@@ -20,6 +26,11 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 28px;
+    padding: 0 120px;
+  }
 }
 
 .reviews__shadow {
@@ -29,6 +40,11 @@
 
   @media (min-width: $tablet-width) {
     top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 60px;
+    padding: 0 120px;
   }
 }
 
