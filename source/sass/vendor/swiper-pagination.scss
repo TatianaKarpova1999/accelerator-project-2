@@ -1,0 +1,25 @@
+.swiper-pagination {
+  display: none;
+
+  @media (min-width: 1440px) {
+    width: 100px;
+    position: absolute;
+    bottom: 92px;
+    right: 120px;
+    z-index: 1;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+    height: 19px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
