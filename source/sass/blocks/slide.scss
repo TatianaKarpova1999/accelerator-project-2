@@ -35,6 +35,7 @@
     color: $basic-white;
     margin-top: 0;
     margin-bottom: 60px;
+    max-width: 280px;
 
     @media (min-width: $tablet-width) {
       font-size: 17px;
@@ -64,6 +65,7 @@
   }
 
   &--two {
+    position: relative;
     background-image: url("../../img/hero-mobile-2@2x.jpg");
 
     @media (min-width: $tablet-width) {
@@ -90,6 +92,62 @@
       height: 800px;
     }
   }
+
+  &--two .slide__wrapper {
+    padding-top: 134px;
+    padding-bottom: 140px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 597px;
+      padding-top: 137px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 200px 120px;
+      padding-bottom: 80px;
+    }
+  }
+
+  &--three .slide__wrapper {
+    padding-top: 121px;
+    padding-bottom: 137px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 342px;
+      padding-bottom: 392px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 200px 120px;
+      padding-bottom: 80px;
+    }
+  }
+
+  &--two::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 442px;
+      height: 365px;
+      background-image: url("../../img/photo-tablet@2x.png");
+      background-repeat: no-repeat;
+      background-size: 442px 365px;
+      top: 472px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 410px;
+      height: 459px;
+      background-image: url("../../img/photo-desktop@2x.png");
+      background-size: 410px 459px;
+      top: 187px;
+      right: 120px;
+      transform: none;
+      left: auto;
+    }
+  }
 }
 
 .slide__wrapper {
@@ -97,6 +155,7 @@
   margin: 0 auto;
   padding: 40px 15px;
   padding-top: 144px;
+  padding-bottom: 150px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -106,6 +165,7 @@
     max-width: 768px;
     padding: 40px;
     padding-top: 342px;
+    padding-bottom: 392px;
   }
 
   @media (min-width: $desktop-width) {
@@ -124,6 +184,7 @@
   width: 180px;
   box-sizing: border-box;
   text-align: center;
+  margin-bottom: 10px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 134px;

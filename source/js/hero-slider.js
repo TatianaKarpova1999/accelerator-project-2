@@ -8,21 +8,21 @@ new Swiper('.hero-swiper', {
 
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,
   },
 
   breakpoints: {
     320: {
       allowTouchMove: true,
-      pagination: false,
     },
 
     768: {
       allowTouchMove: true,
-      pagination: false,
     },
 
     1440: {
+      pagination: {
+        clickable: true,
+      },
       allowTouchMove: false,
     }
   }

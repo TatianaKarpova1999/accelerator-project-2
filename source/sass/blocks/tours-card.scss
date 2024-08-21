@@ -29,6 +29,7 @@
   }
 
   &--two {
+    padding-top: 192px;
     background-image: url("../../img/tours-mobile-2@2x.jpg");
 
     @media (min-width: $tablet-width) {
@@ -41,14 +42,17 @@
   }
 
   &--three {
+    padding-top: 164px;
     background-image: url("../../img/tours-mobile-3@2x.jpg");
 
     @media (min-width: $tablet-width) {
       background-image: url("../../img/tours-tablet-3@2x.jpg");
+      padding-top: 224px;
     }
 
     @media (min-width: $desktop-width) {
       background-image: url("../../img/tours-desktop-3@2x.jpg");
+      padding-top: 196px;
     }
   }
 
@@ -63,10 +67,6 @@
       background-image: url("../../img/tours-desktop-4@2x.jpg");
     }
   }
-
-  &:nth-child(3n) {
-    padding-top: 164px;
-  }
 }
 
 .tours-card__title {
@@ -79,7 +79,7 @@
   margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-    max-width: 219px;
+    max-width: 233px;
   }
 }
 
@@ -88,6 +88,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 15px;
+  row-gap: 12px;
 }
 
 .tours-card__location {
@@ -99,6 +100,7 @@
   padding-left: 34px;
   background-color: $basic-button;
   position: relative;
+  margin-right: auto;
 
   &::before {
     content: "";
@@ -120,7 +122,6 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 12px;
-  margin-left: auto;
 }
 
 .tours-card__days,
