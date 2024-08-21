@@ -22,12 +22,14 @@ new Swiper('.swiper-tours', {
       allowTouchMove: true,
       slidesPerView: 2,
       slidesPerGroup: 1,
+      spaceBetween: 18,
     },
 
     1440: {
       allowTouchMove: false,
       slidesPerView: 3,
       slidesPerGroup: 1,
+      spaceBetween: 30,
     }
   }
 });

@@ -33,6 +33,7 @@
     background-image: url("../../img/tours-mobile-2@2x.jpg");
 
     @media (min-width: $tablet-width) {
+      padding-top: 224px;
       background-image: url("../../img/tours-tablet-2@2x.jpg");
     }
 
@@ -47,7 +48,7 @@
 
     @media (min-width: $tablet-width) {
       background-image: url("../../img/tours-tablet-3@2x.jpg");
-      padding-top: 224px;
+      padding-top: 195px;
     }
 
     @media (min-width: $desktop-width) {

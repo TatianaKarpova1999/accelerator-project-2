@@ -6,6 +6,11 @@
     max-width: 78px;
     gap: 4px;
     position: absolute;
+    top: 60px;
+    right: 45px;
+  }
+
+  @media (min-width: 1440px) {
     top: 120px;
     right: 120px;
   }

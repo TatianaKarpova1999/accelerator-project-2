@@ -9,6 +9,7 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
@@ -31,12 +32,35 @@
   padding: 0;
 }
 
+.header__item {
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .header__link {
+  font-weight: 700;
   text-decoration: none;
   color: $basic-white;
-  font-size: 16px;
-  line-height: 16px;
   padding: 2px 4px;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+  }
 
   &:hover {
     box-shadow: 0 1px 0 0 #ffffff;
@@ -95,6 +119,19 @@
 
   &--open .header__list {
     display: block;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    padding: 15px;
+    padding-bottom: 50px;
+    background-color: $basic-button;
+
+    @media (min-width: $tablet-width) {
+      padding: 45px;
+      padding-bottom: 70px;
+    }
   }
 }
 
@@ -122,13 +159,30 @@
   border: none;
   position: relative;
   cursor: pointer;
+  padding: 0;
 
   @media (min-width: $desktop-width) {
     display: none;
   }
 
-  &::before,
-  &::after {
+  &--open::before,
+  &--open::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    background-color: $basic-white;
+    left: 0;
+    top: 10px;
+    transform: rotate(45deg);
+  }
+
+  &--open::after {
+    transform: rotate(-45deg);
+  }
+
+  &--close::before,
+  &--close::after {
     content: "";
     position: absolute;
     width: 26px;
@@ -139,7 +193,7 @@
     box-shadow: 0 16px 0 0 #ffffff;
   }
 
-  &::after {
+  &--close::after {
     width: 16.5px;
     top: 8px;
     box-shadow: none;
