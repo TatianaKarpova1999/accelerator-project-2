@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import {Pagination} from 'swiper/modules';
 
-new Swiper('.swiper', {
+new Swiper('.hero-swiper', {
   modules: [Pagination],
   loop: true,
 

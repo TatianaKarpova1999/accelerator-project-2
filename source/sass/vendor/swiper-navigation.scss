@@ -1,0 +1,34 @@
+.swiper-button-container {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    max-width: 78px;
+    gap: 4px;
+    position: absolute;
+    top: 120px;
+    right: 120px;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: block;
+  width: 37px;
+  height: 35px;
+  background-color: #0266c1;
+  cursor: pointer;
+  background-image: url("../__spritemap#sprite-slider-arr-view");
+  background-repeat: no-repeat;
+  background-size: 24px 13px;
+  background-position: 50% 50%;
+}
+
+.swiper-button-next {
+  transform: rotate(180deg);
+}
+
+.swiper-button-disabled {
+  background-color: #999999;
+  cursor: default;
+}

@@ -30,17 +30,38 @@
 
   &--two {
     background-image: url("../../img/tours-mobile-2@2x.jpg");
-    display: none;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/tours-tablet-2@2x.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/tours-desktop-2@2x.jpg");
+    }
   }
 
   &--three {
     background-image: url("../../img/tours-mobile-3@2x.jpg");
-    display: none;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/tours-tablet-3@2x.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/tours-desktop-3@2x.jpg");
+    }
   }
 
   &--four {
     background-image: url("../../img/tours-mobile-4@2x.jpg");
-    display: none;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/tours-tablet-4@2x.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/tours-desktop-4@2x.jpg");
+    }
   }
 
   &:nth-child(3n) {

@@ -51,13 +51,29 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    gap: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 30px;
+  }
 }
 
 .tours__slider {
   margin-bottom: 25px;
+  overflow: hidden;
+  max-width: 290px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 678px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 53px;
+    max-width: 1200px;
+    overflow: hidden;
   }
 }
 
