@@ -21,14 +21,14 @@ new Swiper('.reviews-swiper', {
 
     768: {
       allowTouchMove: true,
-      slidesPerView: 1.2,
+      slidesPerView: 1,
       slidesPerGroup: 1,
       spaceBetween: 30,
     },
 
     1440: {
       allowTouchMove: false,
-      slidesPerView: 1.7,
+      slidesPerView: 1,
       slidesPerGroup: 1,
       spaceBetween: 120,
     }

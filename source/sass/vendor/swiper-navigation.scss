@@ -61,3 +61,14 @@
     right: 120px;
   }
 }
+
+.adv .swiper-button-container {
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    top: 580px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
