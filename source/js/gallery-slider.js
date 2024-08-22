@@ -2,9 +2,9 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import {Navigation} from 'swiper/modules';
 
-new Swiper('.reviews-swiper', {
+new Swiper('.swiper-gallery', {
   modules: [Navigation],
-  loop: false,
+  loop: true,
 
   navigation: {
     nextEl: '.swiper-button-next',
@@ -14,23 +14,24 @@ new Swiper('.reviews-swiper', {
   breakpoints: {
     320: {
       allowTouchMove: true,
-      slidesPerView: 1,
+      slidesPerView: 2,
       slidesPerGroup: 1,
-      spaceBetween: 15,
+      spaceBetween: 6,
     },
 
     768: {
       allowTouchMove: true,
-      slidesPerView: 'auto',
+      slidesPerView: 3,
       slidesPerGroup: 1,
-      spaceBetween: 30,
+      spaceBetween: 3,
     },
 
     1440: {
       allowTouchMove: false,
-      slidesPerView: 'auto',
-      slidesPerGroup: 1,
-      spaceBetween: 120,
-    }
+      slidesPerView: 5,
+      spaceBetween: 5,
+    },
   }
 });
+
+

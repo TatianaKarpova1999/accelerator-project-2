@@ -2,13 +2,13 @@
   max-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 20px 15px;
+  padding: 20px 0;
   position: relative;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
-    padding: 40px 45px;
+    padding: 40px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,9 +23,11 @@
 
   margin: 0;
   margin-bottom: 32px;
+  padding: 0 15px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
+    padding: 0 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,9 +40,11 @@
   @include shadow;
 
   top: 5px;
+  padding: 0 15px;
 
   @media (min-width: $tablet-width) {
     top: 20px;
+    padding: 0 45px;
   }
 
   @media (min-width: $desktop-width) {

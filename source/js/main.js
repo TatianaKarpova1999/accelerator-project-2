@@ -2,5 +2,6 @@
 import '../js/hero-slider';
 import '../js/tours-slider';
 import './instructors-slider';
-import './reviews-slider';
+import './gallery-slider';
 import './adv-slider';
+import './reviews-slider';

@@ -2,33 +2,30 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import {Navigation} from 'swiper/modules';
 
-let swiper;
+new Swiper('.adv-swiper', {
+  modules: [Navigation],
+  loop: true,
 
-function resizeScrenn() {
-  if (window.innerWidth >= 1440) {
-    swiper = new Swiper('.adv-swiper', {
-      modules: [Navigation],
-      loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+  breakpoints: {
+    320: {
+      allowTouchMove: false,
+    },
 
+    768: {
+      allowTouchMove: false,
+    },
+
+    1440: {
       allowTouchMove: false,
       slidesPerView: 4,
       slidesPerGroup: 1,
       spaceBetween: 30,
-    });
+    },
   }
-  if (window.innerWidth < 1440) {
-    swiper.destroy();
-  }
-}
-
-resizeScrenn();
-
-window.addEventListener('resize', () => {
-  resizeScrenn();
 });
 

@@ -72,3 +72,9 @@
     transform: translateX(-50%);
   }
 }
+
+.gallery .swiper-button-container {
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
