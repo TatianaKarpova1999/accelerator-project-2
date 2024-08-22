@@ -2,9 +2,11 @@
   padding: 15px;
   border: 1px solid rgb(2, 102, 193, 0.1);
   box-sizing: border-box;
+  min-height: 356px;
 
   @media (min-width: $tablet-width) {
     max-width: 212px;
+    min-height: 388px;
   }
 
   @media (min-width: $desktop-width) {

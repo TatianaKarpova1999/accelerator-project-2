@@ -1,18 +1,21 @@
 .reviews-card {
   padding: 20px;
   box-shadow: 0 0 20px 0 rgb(28, 51, 116, 0.1);
+  box-sizing: border-box;
+  min-height: 484px;
 
   @media (min-width: $tablet-width) {
     padding: 20px 30px;
     max-width: 565px;
-    box-sizing: border-box;
     display: grid;
     grid-template-columns: 186px auto;
     column-gap: 30px;
+    min-height: 277px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 700px;
+    min-height: 293px;
     padding: 20px;
     padding-right: 40px;
     grid-template-columns: 258px auto;
@@ -34,7 +37,7 @@
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {

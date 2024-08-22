@@ -2,13 +2,13 @@
   max-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 20px 15px;
+  padding: 20px 16px;
   padding-top: 36px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
-    padding: 40px 45px;
+    padding: 40px 46px;
   }
 
   @media (min-width: $desktop-width) {
