@@ -119,11 +119,11 @@
     opacity: 50%;
   }
 
-  &:hover {
+  &:not(.form__input--error):hover {
     box-shadow: 0 0 0 1px $basic-button;
   }
 
-  &:focus-visible {
+  &:not(.form__input--error):focus-visible {
     box-shadow: 0 0 0 1px $basic-icon;
     outline: none;
   }
@@ -134,8 +134,13 @@
     cursor: default;
   }
 
+  &:disabled::placeholder {
+    color: #999999;
+  }
+
   &--error {
-    border-color: #ff121f;
+    box-shadow: 0 0 0 1px #ff121f;
+    outline: none;
   }
 }
 

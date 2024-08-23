@@ -5,6 +5,7 @@ import {Navigation} from 'swiper/modules';
 new Swiper('.adv-swiper', {
   modules: [Navigation],
   loop: true,
+  slidesPerView: 'auto',
 
   navigation: {
     nextEl: '.swiper-button-next',
@@ -22,9 +23,11 @@ new Swiper('.adv-swiper', {
 
     1440: {
       allowTouchMove: false,
-      slidesPerView: 4,
-      slidesPerGroup: 1,
+      slidesPerView: 5,
+      slidesPerGroup: 2,
       spaceBetween: 30,
+      centeredSlides: true,
+      initialSlide: 6,
     },
   }
 });

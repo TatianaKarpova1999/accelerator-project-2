@@ -95,7 +95,7 @@
       <section class="tours" data-test="tours">
         <div class="tours__wrapper">
           <h2 class="tours__title">Ближайшие туры</h2>
-          <span class="tours__shadow">Ближайшие туры</span>
+          <span class="tours__shadow" aria-hidden="true">Ближайшие туры</span>
           <div class="tours__slider swiper-tours">
             <div class="swiper-button-container">
               <div class="swiper-button-prev" tabindex="0"></div>
@@ -271,7 +271,7 @@
         <div class="training__wrapper">
           <div class="training__info">
             <h2 class="training__title">Обучение</h2>
-            <span class="training__shadow">Обучение</span>
+            <span class="training__shadow" aria-hidden="true">Обучение</span>
             <p>Обучение проводится квалифицированными специалистами,<span></span> за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
           </div>
           <div class="training__instructors instructors">
@@ -435,7 +435,7 @@
           <div class="about__container">
             <div class="about__story">
               <h2>О нас</h2>
-              <span>О нас</span>
+              <span aria-hidden="true">О нас</span>
               <h3>История компании</h3>
               <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
             </div>
@@ -450,7 +450,7 @@
       <section class="reviews" data-test="reviews">
         <div class="reviews__wrapper">
           <h2 class="reviews__title">Отзывы</h2>
-          <span class="reviews__shadow">Отзывы</span>
+          <span class="reviews__shadow" aria-hidden="true">Отзывы</span>
           <div class="reviews__slider reviews-swiper">
             <div class="swiper-button-container">
               <div class="swiper-button-prev" tabindex="0"></div>
@@ -537,7 +537,7 @@
       <section class="adv" data-test="adv">
         <div class="adv__wrapper">
           <h2 class="adv__title">Преимущества</h2>
-          <span class="adv__shadow">Преимущества</span>
+          <span class="adv__shadow" aria-hidden="true">Преимущества</span>
           <div class="adv__slider adv-swiper">
             <div class="adv__list swiper-wrapper">
               <div class="adv__item adv__item--shield swiper-slide">
@@ -564,6 +564,21 @@
                 <h3>Бережное отношение к природе</h3>
                 <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
               </div>
+
+              <div class="adv__item adv__item--shield swiper-slide">
+                <h3>Безопасность</h3>
+                <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.</p>
+              </div>
+
+              <div class="adv__item adv__item--crown swiper-slide">
+                <h3>Экспертиза и знания</h3>
+                <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
+              </div>
+
+              <div class="adv__item adv__item--boots swiper-slide">
+                <h3>Оборудование и снаряжение</h3>
+                <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
+              </div>
             </div>
             <div class="swiper-button-container">
               <div class="swiper-button-prev" tabindex="0"></div>
@@ -576,7 +591,7 @@
       <section class="gallery" data-test="gallery">
         <div class="gallery__wrapper">
           <h2 class="gallery__title">Фотогалерея</h2>
-          <span class="gallery__shadow">Фотогалерея</span>
+          <span class="gallery__shadow" aria-hidden="true">Фотогалерея</span>
           <p>Добавляйте фото с хэштегом #лайфтур,<span></span> а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
           <div class="gallery__container swiper-gallery">
             <div class="gallery__slider swiper-wrapper">
@@ -677,11 +692,11 @@
               <ul class="form__list">
                 <li class="form__item">
                   <label class="visually-hidden" for="phone">Телефон</label>
-                  <input class="form__input" type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                  <input class="form__input" type="tel" id="phone" name="phone" placeholder="Телефон" pattern="^[ 0-9]+$" required>
                 </li>
                 <li class="form__item">
                   <label class="visually-hidden" for="email">Email</label>
-                  <input class="form__input" type="tel" id="email" name="email" placeholder="Email" required>
+                  <input class="form__input"  type="email" id="email" name="email" placeholder="Email"  pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" required>
                 </li>
               </ul>
               <button class="form__button" type="submit">Отправить</button>
@@ -695,7 +710,7 @@
           <section class="contacts">
             <div class="contacts__wrapper">
               <h2 class="contacts__title">Контакты</h2>
-              <span class="contacts__shadow">Контакты</span>
+              <span class="contacts__shadow" aria-hidden="true">Контакты</span>
               <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
               <ul class="contacts__list">
                 <li class="contacts__item contacts__item--phone">

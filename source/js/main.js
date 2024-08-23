@@ -6,3 +6,4 @@ import './instructors-slider';
 import './gallery-slider';
 import './adv-slider';
 import './reviews-slider';
+import '../js/form';
