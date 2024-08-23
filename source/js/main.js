@@ -1,4 +1,5 @@
 // https://swiperjs.com/get-started#installation
+import '../js/navigation';
 import '../js/hero-slider';
 import '../js/tours-slider';
 import './instructors-slider';

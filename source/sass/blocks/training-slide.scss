@@ -65,11 +65,41 @@
 }
 
 .training-slide__link {
-  border: 1px solid rgb(45, 56, 63, 0.3);
+  box-shadow: 0 0 0 1px rgb(45, 56, 63, 0.3);
   width: 24px;
   height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $basic-black;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 1px transparent;
+    outline: none;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 1px transparent;
+    background-color: $basic-button;
+  }
+
+  &:active .training-slide__icon {
+    fill: $basic-white;
+  }
+
+  &[aria-disabled="true"] {
+    box-shadow: 0 0 0 1px rgb(45, 56, 63, 0.3);
+    pointer-events: none;
+  }
+
+  &[aria-disabled="true"] .training-slide__icon {
+    fill: rgb(45, 56, 63, 0.3);
+  }
 }
 
+.training-slide__icon {
+  fill: $basic-black;
+}
