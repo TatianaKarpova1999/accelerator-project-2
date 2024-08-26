@@ -1,5 +1,18 @@
 .header {
   background-color: $basic-button;
+  position: relative;
+
+  &--open::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-height: 320px;
+    background-color: $basic-button;
+    z-index: 2;
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .header__wrapper {
@@ -10,6 +23,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;

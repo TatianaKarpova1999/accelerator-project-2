@@ -136,6 +136,16 @@
     }
   }
 
+  &:nth-child(6),
+  &:nth-child(7),
+  &:nth-child(8) {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;

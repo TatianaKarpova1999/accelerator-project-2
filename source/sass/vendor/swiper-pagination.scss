@@ -31,10 +31,45 @@
   height: 16px;
   border: 1px solid #ffffff;
   border-radius: 50%;
+  position: relative;
 
   @media (min-width: 768px) {
     width: 20px;
+    height: 18px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 20px;
     height: 19px;
+  }
+
+  &:not(.swiper-pagination-bullet-active):hover {
+    background-color: #d9d9d9;
+  }
+
+  &:not(.swiper-pagination-bullet-active):active {
+    background-color: rgb(255, 255, 255, 0.5);
+  }
+
+  &:not(.swiper-pagination-bullet-active):focus-visible {
+    outline: none;
+  }
+
+  &:not(.swiper-pagination-bullet-active):focus-visible::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    @media (min-width: 768px) {
+      width: 24px;
+      height: 23px;
+    }
   }
 }
 

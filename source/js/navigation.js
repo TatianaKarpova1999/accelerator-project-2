@@ -1,3 +1,4 @@
+const header = document.querySelector('.header');
 const navigation = document.querySelector('.header__nav');
 const navButton = document.querySelector('.header__toggle');
 const menu = document.querySelector('.header__list');
@@ -9,6 +10,7 @@ menu.addEventListener('click', () => {
   navigation.classList.add('header__nav--close');
   navButton.classList.remove('header__toggle--open');
   navButton.classList.add('header__toggle--close');
+  header.classList.remove('header--open');
   document.body.style.overflow = '';
 });
 
@@ -19,11 +21,13 @@ function interactiveMenu () {
     navButton.classList.remove('header__toggle--close');
     navButton.classList.add('header__toggle--open');
     document.body.style.overflow = 'hidden';
+    header.classList.add('header--open');
   } else {
     navigation.classList.remove('header__nav--open');
     navigation.classList.add('header__nav--close');
     navButton.classList.remove('header__toggle--open');
     navButton.classList.add('header__toggle--close');
+    header.classList.remove('header--open');
     document.body.style.overflow = '';
   }
 }

@@ -1,4 +1,9 @@
 .main {
+  background-image: url("../../img/bg-mobile@2x.png");
+  background-size: 141px 595px;
+  background-repeat: no-repeat;
+  background-position: right top 578px;
+
   @media (min-width: $tablet-width) {
     background-image: url("../../img/bg-tablet@2x.png");
     background-size: 425px 1630px;
