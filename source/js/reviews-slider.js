@@ -17,6 +17,7 @@ new Swiper('.reviews-swiper', {
       slidesPerView: 1,
       slidesPerGroup: 1,
       spaceBetween: 15,
+      centeredSlides: true,
     },
 
     768: {

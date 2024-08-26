@@ -1,5 +1,5 @@
 .contacts {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   border-bottom: 1px solid rgb(45, 56, 63, 0.3);
 
   @media (min-width: $tablet-width) {
@@ -57,7 +57,7 @@
 
   margin: 0;
   margin-bottom: 29px;
-  margin-top: 16px;
+  margin-top: 15px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
@@ -70,6 +70,8 @@
 
 .contacts__shadow {
   @include shadow;
+
+  top: 22px;
 
   @media (min-width: $desktop-width) {
     top: 0;
@@ -176,6 +178,10 @@
 
   &--address::before {
     background-image: url("../__spritemap#sprite-address-view");
+  }
+
+  &:last-child {
+    margin-bottom: 10px;
   }
 }
 

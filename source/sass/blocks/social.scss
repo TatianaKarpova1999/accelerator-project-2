@@ -4,8 +4,8 @@
   margin: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-width: 128px;
-  column-gap: 16px;
+  max-width: 130px;
+  column-gap: 18px;
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
@@ -14,8 +14,8 @@
 }
 
 .social__link {
-  width: 32px;
-  height: 30px;
+  width: 30px;
+  height: 29px;
   box-shadow: 0 0 0 1px rgb(45, 56, 63, 0.3);
   display: flex;
   align-items: center;

@@ -3,6 +3,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   padding: 20px 0;
+  padding-top: 37px;
   position: relative;
   overflow: hidden;
 
@@ -22,7 +23,7 @@
   @include h2;
 
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
   padding: 0 15px;
 
   @media (min-width: $tablet-width) {
@@ -39,7 +40,7 @@
 .reviews__shadow {
   @include shadow;
 
-  top: 5px;
+  top: 23px;
   padding: 0 15px;
 
   @media (min-width: $tablet-width) {
@@ -60,6 +61,8 @@
 }
 
 .reviews__slider {
+  padding: 0 15px;
+
   @media (min-width: $desktop-width) {
     padding-left: 130px;
   }

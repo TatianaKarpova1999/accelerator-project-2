@@ -2,7 +2,7 @@
   max-width: 320px;
   margin: 0 auto;
   position: relative;
-  padding-top: 20px;
+  padding-top: 24px;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
@@ -19,7 +19,7 @@
     font-size: 12px;
     line-height: 18px;
     margin: 0;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
     padding: 0 15px;
 
     @media (min-width: $tablet-width) {
@@ -50,7 +50,7 @@
   @include h2;
 
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   padding: 0 15px;
 
   @media (min-width: $tablet-width) {
@@ -67,7 +67,7 @@
 .gallery__shadow {
   @include shadow;
 
-  top: 5px;
+  top: 9px;
   padding: 0 15px;
 
   @media (min-width: $tablet-width) {
@@ -83,6 +83,7 @@
 
 .gallery__container {
   overflow: hidden;
+  max-height: 269px;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
@@ -102,6 +103,7 @@
 .gallery__slider .gallery__group {
   display: flex;
   flex-direction: column;
+  row-gap: 2px;
 
   @media (min-width: $tablet-width) {
     width: 252px;
@@ -125,4 +127,8 @@
     width: 284px;
     height: 463px;
   }
+}
+
+.gallery__picture {
+  object-fit: cover;
 }
