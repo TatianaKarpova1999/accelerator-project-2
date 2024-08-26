@@ -79,9 +79,19 @@
   order: 2;
   margin: 0;
   margin-bottom: 31px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     max-width: 233px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: rgb(255, 255, 255, 0.2);
+    top: 71px;
   }
 }
 
