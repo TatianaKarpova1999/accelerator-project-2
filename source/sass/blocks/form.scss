@@ -22,7 +22,8 @@
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
-    padding: 183px 204px;
+    padding: 186px 204px;
+    padding-bottom: 182px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,7 +40,7 @@
     margin-bottom: 17px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 25px;
+      margin-bottom: 23px;
     }
   }
 
@@ -55,6 +56,7 @@
       margin-bottom: 25px;
       font-size: 16px;
       line-height: 24px;
+      margin-left: -2px;
     }
 
     @media (min-width: $desktop-width) {
@@ -105,7 +107,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 20px 30px;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
+    height: 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,6 +147,12 @@
   &--error {
     box-shadow: 0 0 0 1px #ff121f;
     outline: none;
+  }
+
+  &--email {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 11px;
+    }
   }
 }
 

@@ -20,6 +20,7 @@
   @media (min-width: $tablet-width) {
     max-width: 768px;
     padding: 40px 45px;
+    padding-top: 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,7 +50,7 @@
   top: 6px;
 
   @media (min-width: $tablet-width) {
-    top: 20px;
+    top: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,6 +77,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    row-gap: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,8 +102,10 @@
 
   @media (min-width: $tablet-width) {
     max-width: 324px;
-    padding: 30px 20px;
+    padding: 30px 19px;
     padding-top: 102px;
+    margin-bottom: 0;
+    min-height: 340px;
   }
 
   @media (min-width: $desktop-width) {
@@ -162,13 +166,15 @@
     height: 41px;
     background-image: url("../__spritemap#sprite-shield-view");
     background-repeat: no-repeat;
-    background-size: 24px 24px;
+    background-size: 29px 24px;
     background-position: 8px;
     border: 1px solid $basic-button;
     top: 18px;
 
     @media (min-width: $tablet-width) {
       top: 30px;
+      width: 46px;
+      height: 46px;
     }
   }
 
@@ -183,11 +189,19 @@
   &--distance::before {
     background-image: url("../__spritemap#sprite-distance-view");
     top: 19px;
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+    }
   }
 
   &--flower::before {
     background-image: url("../__spritemap#sprite-flower-view");
     top: 19px;
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+    }
   }
 
   &:last-child {

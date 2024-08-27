@@ -113,6 +113,11 @@
 }
 
 .gallery .swiper-button-container {
+  @media (min-width: 768px) {
+    top: 147px;
+  }
+
+
   @media (min-width: 1440px) {
     display: none;
   }

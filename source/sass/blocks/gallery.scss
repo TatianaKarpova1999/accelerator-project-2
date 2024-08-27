@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
-    padding: 40px 0;
+    padding: 60px 0;
     padding-bottom: 0;
   }
 
@@ -27,6 +27,7 @@
       line-height: 22px;
       padding: 0 45px;
       max-width: 420px;
+      margin-bottom: 21px;
     }
 
     @media (min-width: $desktop-width) {
@@ -55,7 +56,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 45px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,7 +72,7 @@
   padding: 0 15px;
 
   @media (min-width: $tablet-width) {
-    top: 20px;
+    top: 44px;
     padding: 0 45px;
   }
 
@@ -83,10 +84,11 @@
 
 .gallery__container {
   overflow: hidden;
-  max-height: 269px;
+  height: 269px;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
+    height: 421px;
   }
 
   @media (min-width: $desktop-width) {
