@@ -37,6 +37,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
+    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,6 +49,10 @@
   @include shadow;
 
   top: 24px;
+
+  @media (min-width: $tablet-width) {
+    top: 45px;
+  }
 }
 
 .tours__list {
@@ -91,6 +96,8 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
+    padding-left: 6px;
+    word-spacing: 4px;
   }
 
   &::before {
@@ -105,7 +112,8 @@
     top: 9px;
 
     @media (min-width: $tablet-width) {
-      right: 0;
+      right: 4px;
+      top: 10px;
     }
   }
 

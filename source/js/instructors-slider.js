@@ -23,7 +23,7 @@ new Swiper('.instructors-swiper', {
       allowTouchMove: true,
       slidesPerView: 3,
       slidesPerGroup: 1,
-      spaceBetween: 20,
+      spaceBetween: 21,
     },
 
     1440: {

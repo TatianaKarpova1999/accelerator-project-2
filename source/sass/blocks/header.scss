@@ -32,7 +32,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,6 +112,11 @@
 
   @media (min-width: $tablet-width) {
     order: 3;
+    max-width: 300px;
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -208,6 +212,8 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     order: 2;
+    width: 142px;
+    margin-left: 242px;
   }
 
   @media (min-width: $desktop-width) {
@@ -260,6 +266,10 @@
     left: 0;
     top: 1px;
     box-shadow: 0 17px 0 0 #ffffff;
+
+    @media (min-width: $tablet-width) {
+      top: 2px;
+    }
   }
 
   &--close::after {

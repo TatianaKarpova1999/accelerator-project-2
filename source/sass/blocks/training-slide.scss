@@ -62,6 +62,10 @@
 
 .training-slide__image {
   margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .training-slide__link {

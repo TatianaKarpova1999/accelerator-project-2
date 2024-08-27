@@ -6,12 +6,12 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/bg-tablet@2x.png");
-    background-size: 425px 1630px;
+    background-size: 465px 1630px;
     background-repeat: no-repeat;
     background-position: right top 942px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     background-image: url("../../img/bg-desktop@2x.png");
     background-size: 633px 1862px;
     background-repeat: no-repeat;

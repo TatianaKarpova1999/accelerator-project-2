@@ -8,7 +8,8 @@
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
-    padding: 40px 46px;
+    padding: 61px 45px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,6 +29,7 @@
     @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 24px;
+      margin-bottom: 30px;
     }
 
     @media (min-width: $desktop-width) {
@@ -52,16 +54,12 @@
 
   margin: 0;
   margin-bottom: 34px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 36px;
-  }
 }
 
 .training__shadow {
   @include shadow;
 
   @media (min-width: $tablet-width) {
-    top: 20px;
+    top: 46px;
   }
 }

@@ -10,6 +10,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 330px;
+    min-height: 416px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,6 +64,7 @@
 
     @media (min-width: $tablet-width) {
       background-image: url("../../img/tours-tablet-4@2x.jpg");
+      padding-top: 224px;
     }
 
     @media (min-width: $desktop-width) {

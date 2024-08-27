@@ -7,7 +7,7 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 18px;
-    margin-bottom: 104px;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,8 +26,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 172px;
-    row-gap: 104px;
+    column-gap: 175px;
+    row-gap: 79px;
     padding-right: 41px;
   }
 

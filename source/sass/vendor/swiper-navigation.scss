@@ -33,10 +33,9 @@
     height: 14px;
     mask-image: url("../__spritemap#sprite-slider-arr-view");
     mask-repeat: no-repeat;
-    mask-size: 24px 13px;
-    top: 50%;
-    left: 6px;
-    transform: translateY(-50%);
+    mask-size: 32px 10px;
+    top: 12px;
+    left: 3px;
     background-color: #ffffff;
   }
 
@@ -80,7 +79,7 @@
 
 .instructors .swiper-button-container {
   @media (min-width: 768px) {
-    top: 190px;
+    top: 219px;
     right: 45px;
   }
 
@@ -92,7 +91,7 @@
 
 .reviews .swiper-button-container {
   @media (min-width: 768px) {
-    top: 40px;
+    top: 43px;
     right: 45px;
   }
 
