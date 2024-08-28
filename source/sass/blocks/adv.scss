@@ -25,7 +25,8 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
-    padding: 100px 0;
+    padding: 135px 0;
+    padding-bottom: 150px;
   }
 }
 
@@ -54,7 +55,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 70px;
+    top: 106px;
   }
 }
 
@@ -62,6 +63,7 @@
   @media (min-width: $desktop-width) {
     overflow: hidden;
     max-width: 1440px;
+    margin-left: -25px;
   }
 }
 
@@ -112,6 +114,7 @@
     max-width: 380px;
     min-width: 380px;
     min-height: 329px;
+    padding-top: 123px;
   }
 
   h3 {
@@ -126,6 +129,11 @@
       font-size: 16px;
       line-height: 16px;
       text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      line-height: 18px;
     }
   }
 
@@ -176,6 +184,19 @@
       width: 46px;
       height: 46px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 40px;
+      width: 52px;
+      height: 52px;
+      background-position: 12px;
+    }
+  }
+
+  &--shield {
+    @media (min-width: $desktop-width) {
+      order: 1;
+    }
   }
 
   &--crown::before {
@@ -193,6 +214,10 @@
     @media (min-width: $tablet-width) {
       top: 30px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 40px;
+    }
   }
 
   &--flower::before {
@@ -201,6 +226,10 @@
 
     @media (min-width: $tablet-width) {
       top: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 40px;
     }
   }
 

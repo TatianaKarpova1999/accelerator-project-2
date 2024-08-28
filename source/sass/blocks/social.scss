@@ -11,6 +11,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 34px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .social__link {
@@ -20,6 +24,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    width: 27px;
+    height: 28px;
+  }
 
   &:hover {
     box-shadow: 0 0 0 1px $basic-black;

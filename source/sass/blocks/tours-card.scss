@@ -87,6 +87,10 @@
     max-width: 233px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -103,6 +107,10 @@
   align-items: center;
   margin-bottom: 15px;
   row-gap: 12px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .tours-card__location {

@@ -58,6 +58,10 @@
   @media (min-width: $tablet-width) {
     max-width: 158px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 140px;
+  }
 }
 
 .training-slide__image {
@@ -65,6 +69,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 11px;
   }
 }
 

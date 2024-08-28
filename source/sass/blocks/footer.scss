@@ -39,8 +39,13 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
-    justify-content: space-between;
-    margin-bottom: 31px;
+    margin-bottom: 27px;
+  }
+}
+
+.footer__nav {
+  @media (min-width: $desktop-width) {
+    margin-left: 139px;
   }
 }
 
@@ -55,15 +60,16 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    column-gap: 16px;
+    gap: 16px;
     margin-top: -4px;
     margin-left: 39px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    margin-top: 0;
+    margin-top: -1px;
     align-items: center;
+    gap: 23px;
   }
 }
 
@@ -72,6 +78,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 29px;
   }
 }
 
@@ -162,6 +172,7 @@
     font-size: 18px;
     line-height: 18px;
     color: $basic-black;
+    margin-left: auto;
   }
 
   &:hover {
