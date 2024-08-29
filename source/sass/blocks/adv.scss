@@ -62,8 +62,7 @@
 .adv__slider {
   @media (min-width: $desktop-width) {
     overflow: hidden;
-    max-width: 1440px;
-    margin-left: -25px;
+    max-width: 1471px;
   }
 }
 
@@ -159,7 +158,7 @@
 
   &:nth-child(6),
   &:nth-child(7),
-  &:nth-child(8) {
+  &:nth-child(1) {
     display: none;
 
     @media (min-width: $desktop-width) {
@@ -175,7 +174,7 @@
     background-image: url("../__spritemap#sprite-shield-view");
     background-repeat: no-repeat;
     background-size: 29px 24px;
-    background-position: 8px;
+    background-position: 5px;
     border: 1px solid $basic-button;
     top: 18px;
 
@@ -183,6 +182,7 @@
       top: 30px;
       width: 46px;
       height: 46px;
+      background-position: 8px;
     }
 
     @media (min-width: $desktop-width) {
@@ -190,12 +190,6 @@
       width: 52px;
       height: 52px;
       background-position: 12px;
-    }
-  }
-
-  &--shield {
-    @media (min-width: $desktop-width) {
-      order: 1;
     }
   }
 
@@ -233,15 +227,43 @@
     }
   }
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   &--distance h3 {
     margin-top: 1px;
   }
 
   &--flower h3 {
     margin-left: -3px;
+  }
+
+  &--crown {
+    order: 2;
+
+    @media (min-width: $desktop-width) {
+      order: inherit;
+    }
+  }
+
+  &--boots {
+    order: 3;
+
+    @media (min-width: $desktop-width) {
+      order: inherit;
+    }
+  }
+
+  &--distance {
+    order: 4;
+
+    @media (min-width: $desktop-width) {
+      order: inherit;
+    }
+  }
+
+  &--flower {
+    order: 5;
+
+    @media (min-width: $desktop-width) {
+      order: inherit;
+    }
   }
 }
