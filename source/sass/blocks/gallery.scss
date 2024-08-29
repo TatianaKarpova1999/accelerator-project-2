@@ -2,7 +2,7 @@
   max-width: 320px;
   margin: 0 auto;
   position: relative;
-  padding-top: 24px;
+  padding-top: 37px;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
@@ -19,7 +19,7 @@
     font-size: 12px;
     line-height: 18px;
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     padding: 0 15px;
 
     @media (min-width: $tablet-width) {
@@ -52,7 +52,7 @@
   @include h2;
 
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   padding: 0 15px;
 
   @media (min-width: $tablet-width) {
@@ -69,7 +69,7 @@
 .gallery__shadow {
   @include shadow;
 
-  top: 9px;
+  top: 23px;
   padding: 0 15px;
 
   @media (min-width: $tablet-width) {

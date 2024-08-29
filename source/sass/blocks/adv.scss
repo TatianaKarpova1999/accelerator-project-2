@@ -12,6 +12,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   padding: 20px 15px;
+  padding-top: 38px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +35,7 @@
   @include h2;
 
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
@@ -48,7 +49,7 @@
 .adv__shadow {
   @include shadow;
 
-  top: 6px;
+  top: 22px;
 
   @media (min-width: $tablet-width) {
     top: 42px;
@@ -90,7 +91,7 @@
 }
 
 .adv__item {
-  padding: 20px 10px;
+  padding: 20px 9px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,7 +171,7 @@
     content: "";
     position: absolute;
     width: 40px;
-    height: 41px;
+    height: 40px;
     background-image: url("../__spritemap#sprite-shield-view");
     background-repeat: no-repeat;
     background-size: 29px 24px;
@@ -203,7 +204,7 @@
 
   &--distance::before {
     background-image: url("../__spritemap#sprite-distance-view");
-    top: 19px;
+    top: 18px;
 
     @media (min-width: $tablet-width) {
       top: 30px;
@@ -216,7 +217,7 @@
 
   &--flower::before {
     background-image: url("../__spritemap#sprite-flower-view");
-    top: 19px;
+    top: 18px;
 
     @media (min-width: $tablet-width) {
       top: 30px;
@@ -253,9 +254,15 @@
 
   &--distance {
     order: 4;
+    padding-top: 79px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 102px;
+    }
 
     @media (min-width: $desktop-width) {
       order: inherit;
+      padding-top: 123px;
     }
   }
 
