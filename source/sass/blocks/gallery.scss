@@ -19,7 +19,7 @@
     font-size: 12px;
     line-height: 18px;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     padding: 0 15px;
 
     @media (min-width: $tablet-width) {
@@ -107,7 +107,7 @@
 .gallery__slider .gallery__group {
   display: flex;
   flex-direction: column;
-  row-gap: 2px;
+  row-gap: 1px;
 
   @media (min-width: $tablet-width) {
     width: 252px;
@@ -139,6 +139,8 @@
 }
 
 .gallery__picture .gallery__image {
+  height: 266px;
+
   @media (min-width: $tablet-width) {
     height: 418px;
   }
