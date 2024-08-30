@@ -21,7 +21,7 @@
   @media (min-width: $tablet-width) {
     max-width: 768px;
     padding: 40px 45px;
-    padding-top: 58px;
+    padding-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,7 +38,7 @@
   margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,7 +52,7 @@
   top: 22px;
 
   @media (min-width: $tablet-width) {
-    top: 42px;
+    top: 44px;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,8 +104,8 @@
 
   @media (min-width: $tablet-width) {
     max-width: 324px;
-    padding: 30px 19px;
-    padding-top: 102px;
+    padding: 29px 19px;
+    padding-top: 104px;
     margin-bottom: 0;
     min-height: 340px;
   }
@@ -200,6 +200,14 @@
 
   &--boots::before {
     background-image: url("../__spritemap#sprite-boot-view");
+
+    @media (min-width: $tablet-width) {
+      top: 29px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 40px;
+    }
   }
 
   &--distance::before {
@@ -207,7 +215,7 @@
     top: 18px;
 
     @media (min-width: $tablet-width) {
-      top: 30px;
+      top: 29px;
     }
 
     @media (min-width: $desktop-width) {
@@ -220,7 +228,7 @@
     top: 18px;
 
     @media (min-width: $tablet-width) {
-      top: 30px;
+      top: 29px;
     }
 
     @media (min-width: $desktop-width) {
@@ -230,10 +238,26 @@
 
   &--distance h3 {
     margin-top: 1px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 15px;
+    }
   }
 
   &--flower h3 {
     margin-left: -3px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 15px;
+    }
   }
 
   &--crown {
@@ -247,8 +271,13 @@
   &--boots {
     order: 3;
 
+    @media (min-width: $tablet-width) {
+      padding-top: 103px;
+    }
+
     @media (min-width: $desktop-width) {
       order: inherit;
+      padding-top: 123px;
     }
   }
 
@@ -256,8 +285,8 @@
     order: 4;
     padding-top: 79px;
 
-    @media (min-width: $desktop-width) {
-      padding-top: 102px;
+    @media (min-width: $tablet-width) {
+      padding-top: 103px;
     }
 
     @media (min-width: $desktop-width) {
@@ -269,8 +298,13 @@
   &--flower {
     order: 5;
 
+    @media (min-width: $tablet-width) {
+      padding-top: 103px;
+    }
+
     @media (min-width: $desktop-width) {
       order: inherit;
+      padding-top: 123px;
     }
   }
 }
