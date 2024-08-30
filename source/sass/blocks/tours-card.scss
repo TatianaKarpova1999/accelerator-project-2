@@ -15,7 +15,8 @@
 
   @media (min-width: $desktop-width) {
     max-width: 380px;
-    min-height: 410px;
+    min-height: 400px;
+    padding-bottom: 13px;
   }
 
   &--one {
@@ -89,7 +90,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   &::before {
