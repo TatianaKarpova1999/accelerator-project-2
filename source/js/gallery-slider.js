@@ -23,7 +23,7 @@ new Swiper('.swiper-gallery', {
       allowTouchMove: true,
       slidesPerView: 3,
       slidesPerGroup: 1,
-      spaceBetween: 4,
+      spaceBetween: 5,
     },
 
     1440: {

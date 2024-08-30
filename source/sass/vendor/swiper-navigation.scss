@@ -114,11 +114,12 @@
 
 .gallery .swiper-button-container {
   @media (min-width: 768px) {
-    top: 147px;
+    top: 146px;
   }
 
 
   @media (min-width: 1440px) {
     display: none;
+    top: 147px;
   }
 }
