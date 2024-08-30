@@ -7,10 +7,10 @@
   background-size: 100% 100%;
   background-color: #054d05;
   box-sizing: border-box;
+  min-height: 416px;
 
   @media (min-width: $tablet-width) {
     max-width: 330px;
-    min-height: 416px;
   }
 
   @media (min-width: $desktop-width) {
