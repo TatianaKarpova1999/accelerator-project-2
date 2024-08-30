@@ -15,6 +15,7 @@
   @media (min-width: $desktop-width) {
     max-width: 1440px;
     padding: 99px 120px;
+    padding-top: 120px;
     padding-left: 0;
   }
 
@@ -92,11 +93,11 @@
     top: 0;
 
     @media (min-width: $tablet-width) {
-      top: 5px;
+      top: -10px;
     }
 
     @media (min-width: $desktop-width) {
-      top: -14px;
+      top: 2px;
     }
   }
 
