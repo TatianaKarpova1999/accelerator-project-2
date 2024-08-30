@@ -5,6 +5,7 @@
   box-sizing: border-box;
   min-height: 484px;
   max-width: 290px;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     padding: 20px;
