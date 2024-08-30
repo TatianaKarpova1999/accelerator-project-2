@@ -3,6 +3,7 @@
   border: 1px solid rgb(2, 102, 193, 0.1);
   box-sizing: border-box;
   min-height: 356px;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     max-width: 212px;
