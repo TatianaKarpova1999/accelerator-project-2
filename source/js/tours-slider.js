@@ -16,6 +16,7 @@ new Swiper('.swiper-tours', {
       allowTouchMove: true,
       slidesPerView: 1,
       slidesPerGroup: 1,
+      spaceBetween: 15,
     },
 
     768: {
