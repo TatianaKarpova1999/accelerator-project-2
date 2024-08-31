@@ -11,11 +11,11 @@
 
   @media (min-width: $tablet-width) {
     max-width: 330px;
+    padding-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 380px;
-    min-height: 400px;
     padding-bottom: 13px;
   }
 
@@ -87,6 +87,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 233px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,6 +110,10 @@
   align-items: center;
   margin-bottom: 15px;
   row-gap: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 16px;
