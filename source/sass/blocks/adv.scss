@@ -12,7 +12,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   padding: 20px 15px;
-  padding-top: 38px;
+  padding-top: 37px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,12 +91,12 @@
 }
 
 .adv__item {
-  padding: 20px 9px;
+  padding: 19px 9px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid rgb(2, 102, 193, 0.1);
-  padding-top: 80px;
+  padding-top: 81px;
   position: relative;
   margin-bottom: 15px;
   background-color: $basic-white;
@@ -137,14 +137,6 @@
     }
   }
 
-  h3 span {
-    display: block;
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
   p {
     font-size: 12px;
     line-height: 18px;
@@ -174,10 +166,10 @@
     height: 40px;
     background-image: url("../__spritemap#sprite-shield-view");
     background-repeat: no-repeat;
-    background-size: 29px 24px;
-    background-position: 5px;
+    background-size: 28px 24px;
+    background-position: 6px;
     border: 1px solid $basic-button;
-    top: 18px;
+    top: 19px;
 
     @media (min-width: $tablet-width) {
       top: 30px;
@@ -212,7 +204,7 @@
 
   &--distance::before {
     background-image: url("../__spritemap#sprite-distance-view");
-    top: 18px;
+    top: 19px;
 
     @media (min-width: $tablet-width) {
       top: 29px;
@@ -225,7 +217,7 @@
 
   &--flower::before {
     background-image: url("../__spritemap#sprite-flower-view");
-    top: 18px;
+    top: 19px;
 
     @media (min-width: $tablet-width) {
       top: 29px;
@@ -249,15 +241,23 @@
   }
 
   &--flower h3 {
-    margin-left: -3px;
+    margin-left: -4px;
+    max-width: 170px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 14px;
+      max-width: 200px;
     }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 15px;
+      max-width: 340px;
     }
+  }
+
+  &--flower h3 span {
+    display: block;
+    width: 2px;
   }
 
   &--crown {
@@ -283,7 +283,7 @@
 
   &--distance {
     order: 4;
-    padding-top: 79px;
+    padding-top: 80px;
 
     @media (min-width: $tablet-width) {
       padding-top: 103px;
@@ -297,6 +297,7 @@
 
   &--flower {
     order: 5;
+    padding-top: 81px;
 
     @media (min-width: $tablet-width) {
       padding-top: 103px;
