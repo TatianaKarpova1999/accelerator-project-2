@@ -94,6 +94,7 @@
 .form__content {
   @media (min-width: $desktop-width) {
     display: flex;
+    align-items: start;
     flex-wrap: wrap;
     max-width: 960px;
   }

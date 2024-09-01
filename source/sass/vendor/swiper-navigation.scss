@@ -7,12 +7,12 @@
     max-width: 78px;
     gap: 4px;
     position: absolute;
-    top: 60px;
+    bottom: 0;
     right: 45px;
   }
 
   @media (min-width: 1440px) {
-    top: 120px;
+    bottom: 0;
     right: 120px;
   }
 }
@@ -77,6 +77,16 @@
   pointer-events: none;
 }
 
+.tours .swiper-button-container {
+  @media (min-width: 768px) {
+    top: 60px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 120px;
+  }
+}
+
 .instructors .swiper-button-container {
   @media (min-width: 768px) {
     top: 219px;
@@ -106,7 +116,7 @@
 
   @media (min-width: 1440px) {
     display: flex;
-    top: 598px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
   }

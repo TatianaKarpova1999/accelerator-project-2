@@ -36,9 +36,12 @@
     flex-direction: row;
     margin-bottom: 30px;
     width: 678px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, auto);
     width: 1200px;
     margin-bottom: 27px;
   }
@@ -174,6 +177,7 @@
     line-height: 18px;
     color: $basic-black;
     margin-left: auto;
+    grid-column: 3;
   }
 
   &:hover {
