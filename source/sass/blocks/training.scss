@@ -40,7 +40,9 @@
     }
   }
 
-  p span {
+  br {
+    display: none;
+
     @media (min-width: $tablet-width) {
       display: block;
     }
